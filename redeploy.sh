@@ -1,5 +1,6 @@
 #!/usr/bin/bash
 
+sudo systemctl restart tomcat
 sudo sed -i 's/port="8080"/port="8080"/' /etc/tomcat/server.xml
 sudo systemctl restart tomcat
 sudo systemctl status tomcat.service
